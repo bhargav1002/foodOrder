@@ -30,7 +30,7 @@ export default function Signup() {
     } = useInput((value) => value.trim() !== '' && value.length > 6);
 
     const userRegistration = async () => {
-        await fetch('https://react-6784b-default-rtdb.firebaseio.com/users.json', {
+        await fetch('https://foodorder-749de-default-rtdb.firebaseio.com/users.json', {
             method: 'POST',
             body: JSON.stringify({
                 email: enteredemail,

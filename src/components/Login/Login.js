@@ -33,8 +33,7 @@ export default function Login(props) {
             localStorage.setItem("isLoggedIn", 1);
         }
         for (let obj in data) {
-            if(data[obj].email === signinenteredemail && data[obj].Password === signinenteredpass)
-            {
+            if (data[obj].email === signinenteredemail && data[obj].Password === signinenteredpass) {
                 setvalue();
                 return;
             }
@@ -61,7 +60,7 @@ export default function Login(props) {
     }
 
     const usercheck = async () => {
-        await fetch('https://react-6784b-default-rtdb.firebaseio.com/users.json', {
+        await fetch('https://foodorder-749de-default-rtdb.firebaseio.com/users.json', {
             method: 'GET',
         })
             .then((response) => response.json())

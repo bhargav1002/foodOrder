@@ -11,7 +11,7 @@ export default function ShowOrder() {
         setIsLoading(true);
         setError(null);
         try {
-            const response = await fetch('https://foodorder-e232d-default-rtdb.firebaseio.com/orders.json');
+            const response = await fetch('https://foodorder-749de-default-rtdb.firebaseio.com/orders.json');
             if (!response.ok) {
                 throw new Error('Something went wrong!');
             }

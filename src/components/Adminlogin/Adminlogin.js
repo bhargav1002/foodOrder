@@ -29,8 +29,7 @@ export default function Adminlogin(props) {
 
     const checkuser = (data) => {
         for (let obj in data) {
-            if(data[obj].email === adminsigninenteredemail && data[obj].Password === adminsigninenteredpass) 
-            {
+            if (data[obj].email === adminsigninenteredemail && data[obj].Password === adminsigninenteredpass) {
                 props.setIsLoggedIn(true);
                 return;
             }
@@ -56,7 +55,7 @@ export default function Adminlogin(props) {
     }
 
     const usercheck = async () => {
-        await fetch('https://react-6784b-default-rtdb.firebaseio.com/adminusers.json', {
+        await fetch('https://foodorder-749de-default-rtdb.firebaseio.com/adminusers.json', {
             method: 'GET',
         })
             .then((response) => response.json())
