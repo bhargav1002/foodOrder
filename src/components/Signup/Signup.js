@@ -99,7 +99,7 @@ export default function Signup() {
             <section style={{ maxWidth: '30rem', margin: 'auto' }} className='h-screen pt-48'>
                 <div className='shadow p-4 rounded-xl bg-white' style={{ zIndex: 100 }}>
                     <div>
-                        <h2 style={{ textAlign: "center" }}>SignUp</h2>
+                        <h2 style={{ textAlign: "center" }} className='text-3xl'>SignUp</h2>
                     </div>
                     <form className={classes.form} onSubmit={confirmHandler}>
                         <div className={emailControlClasses}>
